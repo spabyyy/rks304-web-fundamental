@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Produk - Admin</title>
+  <link rel="icon" type="image/jpg" href="fútbol Club Barcelona.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-100 text-slate-800">
+
+ <header class="bg-slate-800 text-white px-6 py-4 flex items-center justify-between shadow">
+    <h1 class="text-xl font-bold">TOKO ALEXANDER</h1>
+    <span class="text-sm">Halo, Admin</span>
+  </header>
+
+  <div class="flex flex-1">
+    <nav class="w-56 bg-slate-800 text-slate-200 p-4 space-y-1 flex flex-col">
+      <a href="dashboard.html" class="block px-3 py-2 rounded hover:bg-slate-700">Dashboard</a>
+      <a href="products.html" class="block px-3 py-2 rounded hover:bg-slate-700">Products</a>
+      <a href="#" class="block px-3 py-2 rounded hover:bg-slate-700">Users</a>
+      <a href="#" class="block px-3 py-2 rounded hover:bg-slate-700">Setting</a>
+      <a href="index.html" class="block px-3 py-2 rounded bg-red-600 hover:bg-red-700 text-white mt-auto text-center">Logout</a>
+    </nav>
+
+    <main class="flex-1 p-8">
+      <h2 class="text-2xl font-bold mb-6">Add Produk</h2>
+      <form action="products.html" method="get" class="bg-white rounded-xl shadow p-6 max-w-xl space-y-4">
+        <div>
+          <label class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" name="name" required class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Stock</label>
+          <input type="number" name="stock" min="0" required class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Description</label>
+          <textarea name="description" rows="4" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+        </div>
+        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg">Submit</button>
+      </form>
+
+    </main>
+  </div>
+
+  <footer class="bg-white text-center text-sm text-slate-500 py-3 border-t">
+    &copy; 2026 Toko ALEXANDER jaya jaya jaya.
+  </footer>
+
+</body>
+</html>
